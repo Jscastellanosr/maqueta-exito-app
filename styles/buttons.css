@@ -1,0 +1,96 @@
+nav button {
+    border-radius: 5px;
+    width: 25%;
+    border-left: 2px solid rgb(141, 118, 2);
+}
+
+
+button{
+    background-color: #DCC805ff;
+    border: 0;
+}
+
+button:hover{
+    background-color: rgb(136, 123, 3);
+    cursor: pointer;
+}
+
+.logButton{
+    height: 15%;
+    width: 15%;
+    margin-top: -80px;
+    border-radius: 20px;
+    font-family: fantasy;
+    transition: transform 300ms ease-in-out 0ms;
+}
+.logButton:hover{
+    background-color: rgb(191, 0, 255);
+    transform: scale(1.2);
+    transition: transform 300ms ease-in-out 0ms;
+    cursor: pointer;
+}
+
+
+.userButton{
+    font-size: 25px;
+    box-sizing: content-box;
+    text-align: center;
+    background-color: #DCC805ff;
+    width: 7em;
+    padding: 9px;
+    border-radius: 10px;
+    transition: transform 200ms ease-in-out 0ms;
+}
+
+.userButton:hover {
+    border-bottom: 5px solid black;
+    border-right: 5px solid black;
+    transform: scale(1.2);
+    background-color: rgb(191, 0, 255);
+    transition: transform 200ms ease-in-out 0ms;
+    cursor: pointer;
+}
+
+#consultar {
+    width: 7%;
+    height: 7%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+}
+
+
+.clicked {
+    background-color: red;
+}
+
+input[type=submit] {
+    width: 25%;
+    height: 15%;
+    border-radius: 20px;
+}
+
+#errorOk {
+    height: 20%;
+    width: 20%;
+    border-radius: 20px;
+    border:solid black;
+    border-top: 0;
+    border-left: 0;
+}
+
+#back{
+    height: 7%;
+    width: 7%;
+    border-radius: 15px;
+    border-bottom: 2px solid black;
+}
+
+.actionB{
+    background-color: rgb(136, 123, 3);
+}
+
+.actionB:hover {
+    background-color: #DCC805ff;
+}
