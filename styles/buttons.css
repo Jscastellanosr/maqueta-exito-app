@@ -1,13 +1,17 @@
 nav button {
     border-radius: 5px;
-    width: 25%;
-    border-left: 2px solid rgb(141, 118, 2);
+    flex: 1;
+    min-width: 200px;
+    border: 2px solid rgb(141, 118, 2);
+    min-height: 5vh;
+
 }
 
 
 button{
     background-color: #DCC805ff;
     border: 0;
+    
 }
 
 button:hover{
@@ -53,6 +57,7 @@ button:hover{
 }
 
 #consultar {
+    margin-bottom: 5px;
     height: 3rem;
     width: 6rem;
     min-width: 7%;
@@ -93,7 +98,13 @@ input[type=submit] {
 }
 
 .actionB{
+    min-height:40px;
+    min-width:60px;
+    height: 90%;
+    width: 20%;
     background-color: rgb(136, 123, 3);
+    border: 2px solid black;
+    border-radius: 10px;
 }
 
 .actionB:hover {

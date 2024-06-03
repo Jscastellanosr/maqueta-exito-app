@@ -78,6 +78,9 @@ consultar.addEventListener('click', ()=>{
         const date = document.createElement('div')
         const deliverDate = document.createElement('div')
 
+        const buttons = document.createElement('div')
+        buttons.classList.add('ActionButtons')
+
         const rutas = document.createElement('button')
         const Rproblem = document.createElement('button')
         const Rentrega = document.createElement('button')
@@ -106,9 +109,11 @@ consultar.addEventListener('click', ()=>{
 
         cajaCompra.appendChild(delivInfo)
 
-        cajaCompra.appendChild(rutas)
-        cajaCompra.appendChild(Rproblem)
-        cajaCompra.appendChild(Rentrega)
+        buttons.appendChild(rutas)
+        buttons.appendChild(Rproblem)
+        buttons.appendChild(Rentrega)
+
+        cajaCompra.appendChild(buttons)
 
 
 
