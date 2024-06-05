@@ -73,10 +73,42 @@ consultar.addEventListener('click', ()=>{
 
         const delivInfo = document.createElement('div')
 
+        const box1 = document.createElement('div')
+        const box2 = document.createElement('div')
+        const box3 = document.createElement('div')
+        const box4 = document.createElement('div')
+
+        const head1 = document.createElement('div')
+        const head2 = document.createElement('div')
+        const head3 = document.createElement('div')
+        const head4 = document.createElement('div')
+
+        head1.classList.add('dataHeader')
+        head2.classList.add('dataHeader')
+        head3.classList.add('dataHeader')
+        head4.classList.add('dataHeader')
+
+        head1.textContent = 'producto'
+        head2.textContent = 'valor'
+        head3.textContent = 'fecha'
+        head4.textContent = 'dirección'
+
+        box1.appendChild(head1)
+        box2.appendChild(head2)
+        box3.appendChild(head3)
+        box4.appendChild(head4)
+
+
         const product = document.createElement('div')
         const price = document.createElement('div')
         const date = document.createElement('div')
         const deliverDate = document.createElement('div')
+
+        product.classList.add('dataContent')
+        price.classList.add('dataContent')
+        date.classList.add('dataContent')
+        deliverDate.classList.add('dataContent')
+
 
         const buttons = document.createElement('div')
         buttons.classList.add('ActionButtons')
@@ -93,11 +125,16 @@ consultar.addEventListener('click', ()=>{
         date.textContent = compra.fechaCompra
         deliverDate.textContent = compra.fechaEntrega
 
+        box1.appendChild(product)
+        box2.appendChild(price)
+        box3.appendChild(date)
+        box4.appendChild(deliverDate)
 
-        delivInfo.appendChild(product)
-        delivInfo.appendChild(price)
-        delivInfo.appendChild(date)
-        delivInfo.appendChild(deliverDate)
+
+        delivInfo.appendChild(box1)
+        delivInfo.appendChild(box2)
+        delivInfo.appendChild(box3)
+        delivInfo.appendChild(box4)
         rutas.textContent = 'Rutas'
         Rproblem.textContent = 'Reportar Problema'
         Rentrega.textContent = 'Reportar Entrega'
